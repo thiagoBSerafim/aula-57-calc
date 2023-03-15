@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #edf5fc;    
+
+
+}
+.container {
+    position: relative;
+    width: 340px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ecdcdce1;
+}
+
+
+.display{
+    position: relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    text-align: end;
+    color: #5166d6;
+    height: 100px;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1), inset -5px -5px 20px #fff;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    font-size: 2em;
+    font-weight: 500;   
+    border: none; 
+}
+.btn {
+    position: relative;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 20px #fff;
+    margin: 12px;
+    cursor: pointer;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #666;
+    border: 2px solid #edf1f4;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff;
+    border-radius: 10px;
+}
+ .btn:hover {
+    background:#837676;
+    color:#fff;
+ }
+
+ .btn-clear{
+    grid-column: span 2;
+    background-color: #f44336;
+    color: #fff;
+    border: 2px solid #edf1f4;
+ }
+
+ .btn-oper {
+    background: #31a935;
+    color: #fff;
+    border: 2px solid #edf1f4;
+ }
+
+ .btn-eq{
+    background: #2196f3;
+    color: #fff;
+    border: 2px solid #edf1f4
+ }
+  .btn-prt {
+    background: #2196f3;
+    color: #fff;
+    border: 2px solid #edf1f4
+  }
+
+  @media(max-width: 1280px){
+    body{
+        padding: 0 40px;
+    }
+}
+
+@media(max-width: 768px){
+    .informacoes{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informacoes .descricao{
+        width:60%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 425px) {
+    .informacoes .logo{
+        max-width: 300px;
+    }
+
+    .informacoes .descricao{
+        width: 100%;
+    }
+
+    .menu-lateral{
+        position: static;
+        min-height: auto;
+        width: 100%;
+        margin-top: 50px;
+    }  
+    
+    .menu-lateral ul{
+        flex-direction: row;
+    }
+
+    .conteudo{
+        min-height: 70vh;
+        gap: 50px;
+    }
+
+    body{
+        padding: 40px;
+    }
+    
+}    
